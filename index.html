@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MealBridge - Zero Hunger Food Donation Platform</title>
+    
+    <!-- Primary Meta Tags -->
+    <meta name="title" content="MealBridge - Zero Hunger Food Donation Platform">
+    <meta name="description" content="MealBridge is a real-time food rescue platform connecting restaurants with surplus food to local shelters and NGOs in Bengaluru. Donate food, save lives, and eliminate waste.">
+    <meta name="keywords" content="food donation app, surplus food, ngo connection, hunger relief india, zero food waste, restaurant charity, feed the needy, bangalore food rescue, volunteer">
+    <meta name="author" content="Abhishek SK">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://mealbridge.app/" />
+    <meta name="theme-color" content="#10B981">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://mealbridge.app/">
+    <meta property="og:title" content="MealBridge - Share Food, Save Lives">
+    <meta property="og:description" content="Join the movement to end hunger. Connect surplus food with those in need instantly through our real-time logistics platform.">
+    <meta property="og:image" content="https://images.unsplash.com/photo-1488521787991-ed7bbaae773c?ixlib=rb-1.2.1&auto=format&fit=crop&w=1200&q=80">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://mealbridge.app/">
+    <meta property="twitter:title" content="MealBridge - Zero Hunger Initiative">
+    <meta property="twitter:description" content="Connect, Donate, and Save Lives with MealBridge. Bridging the gap between abundance and need.">
+    <meta property="twitter:image" content="https://images.unsplash.com/photo-1488521787991-ed7bbaae773c?ixlib=rb-1.2.1&auto=format&fit=crop&w=1200&q=80">
+
+    <!-- Structured Data -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "SoftwareApplication",
+      "name": "MealBridge",
+      "applicationCategory": "SocialNetworkingApplication",
+      "operatingSystem": "Web Browser",
+      "description": "A platform connecting food donors with NGOs to reduce food waste and hunger.",
+      "offers": {
+        "@type": "Offer",
+        "price": "0",
+        "priceCurrency": "INR"
+      },
+      "author": {
+        "@type": "Person",
+        "name": "Abhishek SK"
+      }
+    }
+    </script>
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "name": "MealBridge",
+      "url": "https://mealbridge.app",
+      "logo": "https://mealbridge.app/logo.png",
+      "contactPoint": {
+        "@type": "ContactPoint",
+        "telephone": "+91-9876543210",
+        "contactType": "customer service",
+        "areaServed": "IN"
+      }
+    }
+    </script>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Outfit:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            fontFamily: {
+              sans: ['Inter', 'sans-serif'],
+              heading: ['Outfit', 'sans-serif'],
+            },
+            colors: {
+              emerald: {
+                600: '#059669',
+              },
+              amber: {
+                500: '#F59E0B',
+              },
+              stone: {
+                50: '#FAFAF9',
+              }
+            },
+            animation: {
+              'bounce-in': 'bounceIn 0.5s cubic-bezier(0.8, 0, 1, 1)',
+              'fade-in': 'fadeIn 0.3s ease-out',
+              // Made faster and bouncier (spring physics)
+              'pop': 'pop 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275)', 
+              'fade-in-up': 'fadeInUp 0.8s ease-out forwards',
+            },
+            keyframes: {
+              bounceIn: {
+                '0%': { transform: 'scale(0.8)', opacity: '0' },
+                '100%': { transform: 'scale(1)', opacity: '1' },
+              },
+              fadeIn: {
+                '0%': { opacity: '0' },
+                '100%': { opacity: '1' },
+              },
+              pop: {
+                '0%': { transform: 'scale(0.5)', opacity: '0' },
+                '100%': { transform: 'scale(1)', opacity: '1' },
+              },
+              fadeInUp: {
+                '0%': { opacity: '0', transform: 'translateY(20px)' },
+                '100%': { opacity: '1', transform: 'translateY(0)' },
+              }
+            }
+          }
+        }
+      }
+    </script>
+    <style>
+      ::-webkit-scrollbar { width: 8px; }
+      ::-webkit-scrollbar-track { background: #f1f1f1; }
+      ::-webkit-scrollbar-thumb { background: #d1d5db; border-radius: 4px; }
+      ::-webkit-scrollbar-thumb:hover { background: #9ca3af; }
+      
+      .confetti {
+        position: absolute;
+        width: 10px;
+        height: 10px;
+        animation: confetti-fall 3s linear infinite;
+      }
+      @keyframes confetti-fall {
+        0% { transform: translateY(-100vh) rotate(0deg); opacity: 1; }
+        100% { transform: translateY(100vh) rotate(720deg); opacity: 0; }
+      }
+      
+      /* Typing indicator dots */
+      .typing-dot {
+        animation: typing 1.4s infinite ease-in-out both;
+      }
+      .typing-dot:nth-child(1) { animation-delay: -0.32s; }
+      .typing-dot:nth-child(2) { animation-delay: -0.16s; }
+      
+      @keyframes typing {
+        0%, 80%, 100% { transform: scale(0); }
+        40% { transform: scale(1); }
+      }
+    </style>
+  <script type="importmap">
+{
+  "imports": {
+    "lucide-react": "https://aistudiocdn.com/lucide-react@^0.554.0",
+    "react-dom/": "https://aistudiocdn.com/react-dom@^19.2.0/",
+    "react/": "https://aistudiocdn.com/react@^19.2.0/",
+    "react": "https://aistudiocdn.com/react@^19.2.0"
+  }
+}
+</script>
+</head>
+  <body class="bg-stone-50 text-slate-800 antialiased">
+    <div id="root"></div>
+  </body>
+</html>
